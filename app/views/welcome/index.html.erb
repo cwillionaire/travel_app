@@ -1,0 +1,19 @@
+<h1>Welcome to my Travel Site</h1>
+<p>This is my very awesome travel site.</p>
+
+<%= @homeland %>
+
+<ul>
+<% @countries.each do |country| %>
+    <li><%= country %></li>
+<% end %>
+</ul>
+
+<!--<%= image_tag "Chile.gif", alt: "Chile", id: "chile", class: "country", height: 300, width: 400 %>-->
+<!--<%= image_tag "chile1.jpg", alt: "Chile1", id: "chile", class: "country", height: 300, width: 400 %>-->
+<!--<%= image_tag "chile2.jpg", alt: "Chile2", id: "chile", class: "country", height: 300, width: 400 %>-->
+<!--<%= image_tag "chile3.jpg", alt: "Chile3", id: "chile", class: "country", height: 300, width: 400 %>-->
+
+<% @chilepics.each do |pic| %>
+    <%= image_tag pic, class: "img-responsive" %>
+    <% end %>
